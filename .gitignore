@@ -1,0 +1,10 @@
+spec/fixtures/cassettes
+tmp/mongod
+doc/
+.yardoc/
+coverage/
+pkg/
+Gemfile.lock
+*.DS_Store
+.bundle/
+.env
