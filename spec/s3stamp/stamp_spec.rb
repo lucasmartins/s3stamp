@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'ostruct'
 
 describe S3Stamp::Stamper do
   let(:duck) do
@@ -10,6 +11,10 @@ describe S3Stamp::Stamper do
   before(:each) do
     t = Time.local(2014, 11, 2, 22, 04, 00)
     Timecop.freeze(t)
+    # using fake SSL sha1 from Vagrant box
+    fake = OpenSSL::Digest.new('sha1')
+    allow(fake).to receive(:digest).and_return("\xDA9\xA3\xEE^kK\r2U\xBF\xEF\x95`\x18\x90\xAF\xD8\a\t")
+    allow(S3Stamp).to receive(:digest).and_return(fake)
   end
   after(:each) do
     Timecop.return
