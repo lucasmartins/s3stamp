@@ -43,7 +43,6 @@ describe S3Stamp::Stamper do
       VCR.use_cassette('url_for.put_with_acl', record: :once) do
         request = Typhoeus::Request.new url, method: :put, body: 'pretty body', headers: {'X-Amz-Acl' => 'public-read'}
         request.on_headers do |response|
-          puts response.inspect
           expect(response.code).to eq(200)
         end
         request.run

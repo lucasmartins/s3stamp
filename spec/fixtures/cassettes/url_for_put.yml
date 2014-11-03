@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://s3.amazonaws.com/agentevirtual-test/test.txt?AWSAccessKeyId=AKIAJBUXNFCJOBT3SYHQ&Expires=1414973940&Signature=AWK19tsuhpTtw5LRDBQ1THpPpE4=
+    body:
+      encoding: UTF-8
+      string: pretty body
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - ElNNNbCXsfns+N+RBhbpK5spAgFRuG5BMyz4ksQUEZaOLFvJLGleKBzV1OpOF0hd
+      X-Amz-Request-Id:
+      - 971A4ADEB7B6EA39
+      Date:
+      - Mon, 03 Nov 2014 00:04:21 GMT
+      Etag:
+      - '"cc7d63b2f0b2e3a703b755471cbb9080"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 03 Nov 2014 00:04:00 GMT
+recorded_with: VCR 2.9.3
