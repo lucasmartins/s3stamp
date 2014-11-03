@@ -9,6 +9,8 @@ require 'vcr'
 require 'webmock'
 require 'webmock/rspec'
 require 'timecop'
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 
 SPECDIR = Pathname.new(File.dirname(__FILE__))
 TMPDIR = SPECDIR.join('tmp')

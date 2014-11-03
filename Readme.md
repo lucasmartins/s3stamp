@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/lucasmartins/s3stamp/badges/gpa.svg)](https://codeclimate.com/github/lucasmartins/s3stamp) [![Test Coverage](https://codeclimate.com/github/lucasmartins/s3stamp/badges/coverage.svg)](https://codeclimate.com/github/lucasmartins/s3stamp) [ ![Codeship Status for lucasmartins/s3stamp](https://codeship.io/projects/e065ec20-451d-0132-ec31-26eabbfbacd1/status)](https://codeship.io/projects/44941)
+
 S3Stamp
 =======
 

@@ -19,4 +19,5 @@ group :test do
   gem 'webmock', '>= 1.8.0', '< 1.16'
   gem 'timecop'
   gem 'typhoeus'
+  gem "codeclimate-test-reporter", group: :test, require: nil
 end
