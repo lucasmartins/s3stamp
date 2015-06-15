@@ -3,7 +3,7 @@
 S3Stamp
 =======
 
-This Gem provides an easy way to generate S3 signed URLs so you can upload file to S3 with [Typhoeus](https://github.com/typhoeus/typhoeus), without any of that thread-unsafety non-sense from the `aws-s3` lib. Testing is majorly done using Typhoeus (libcurl wrap), but you will be fine using any http lib you want.
+This Gem provides an easy way to generate S3 signed URLs so you can upload files to S3 with [Typhoeus](https://github.com/typhoeus/typhoeus), without any of that thread-unsafety non-sense from the `aws-s3` lib. Testing is majorly done using Typhoeus (libcurl wrap), but you will be fine using any http lib you want.
 
 Main goal here is not to implement all features from S3, I'm writing what I need, feel free to send a Pull-Request with any extra support.
 
